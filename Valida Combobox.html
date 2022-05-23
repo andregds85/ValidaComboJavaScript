@@ -1,0 +1,17 @@
+<script language="javascript" >
+    function validacd() {
+        var comboNome = document.getElementById("nome1");
+        if (comboNome.options[comboNome.selectedIndex].value == "" ){
+                alert("Selecione um nome antes de prosseguir");
+        }
+    }    
+</script>
+.
+.
+.
+<select id="nome1">
+    <option value="">- Selecione -</option>
+    <option value="José">José</option>
+    <option value="João">João</option>
+</select>
+<input type="button" value="Validar" onclick="validacd()" />
